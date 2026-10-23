@@ -1,0 +1,18 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Приобрести билет — СПАРК</title><link href="styles.css" rel="stylesheet"><link href="checkout.css" rel="stylesheet"></head><body class="checkout-page"><main class="checkout-shell"><a class="checkout-back" href="index.html#tickets">← На сайт конференции</a><div class="checkout-heading"><p class="section-kicker">СПАРК · 7 ноября 2026 · Москва</p><h2 id="checkout-title">Приобрести билет</h2><p>Проверьте данные перед оплатой</p></div>
+<form id="registration-form" novalidate>
+<div class="checkout-fields">
+<label for="customer-email">Электронная почта<input id="customer-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="mail@example.ru"></label>
+<label for="customer-name">Фамилия, имя, отчество (при наличии)<input id="customer-name" name="fullName" autocomplete="name" required minlength="3" maxlength="160" placeholder="Ваше полное имя"></label>
+<label for="customer-phone">Телефон<input id="customer-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="30" placeholder="+7 999 123-45-67" aria-describedby="phone-hint"><small id="phone-hint">С кодом страны, например +7</small></label>
+</div>
+<div class="form-trap" aria-hidden="true"><label>Оставьте поле пустым<input name="website" tabindex="-1" autocomplete="off"></label></div>
+<fieldset class="checkout-consents"><legend>Документы и согласия</legend>
+<div class="consent-row"><input type="checkbox" id="consent-offer" name="offer" required><label for="consent-offer">Я ознакомился(-ась) и согласен(-на) с условиями <a href="legal/2026-10-22/offer.html" target="_blank" rel="noopener noreferrer">оферты</a>.</label></div>
+<div class="consent-row"><input type="checkbox" id="consent-processing" name="processing" required><label for="consent-processing">Даю <a href="legal/2026-10-22/processing.html" target="_blank" rel="noopener noreferrer">согласие на обработку персональных данных</a> в соответствии с <a href="legal/2026-10-22/privacy.html" target="_blank" rel="noopener noreferrer">Политикой обработки персональных данных</a>.</label></div>
+<div class="consent-row"><input type="checkbox" id="consent-distribution" name="distribution"><label for="consent-distribution">Даю <a href="legal/2026-10-22/distribution.html" target="_blank" rel="noopener noreferrer">согласие на распространение персональных данных</a>.<small>Необязательно для покупки билета. Перечень данных и условия публикации — в тексте согласия.</small></label></div>
+</fieldset>
+<p id="checkout-status" class="checkout-status" role="status" aria-live="polite"></p>
+<button class="checkout-submit" type="submit">Перейти к оплате <span aria-hidden="true">↗</span></button>
+<p class="checkout-note">После сохранения заявки откроется Prodamus. На платёжной странице потребуется повторно указать телефон и email.</p>
+<noscript><p>Для заполнения формы включите JavaScript или свяжитесь с организатором: <a href="mailto:Dolersi88@gmail.com">Dolersi88@gmail.com</a>.</p></noscript>
+</form></main><script src="checkout-config.js?v=14-live-1"></script><script src="checkout.js"></script></body></html>
